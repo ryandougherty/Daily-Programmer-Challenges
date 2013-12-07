@@ -49,10 +49,9 @@ int main(int argc, char* argv[]) {
 	std::string instructions;
 	inFile >> instructions;
 	
-	size_t idx = 0, max = instructions.size();
+	size_t idx = 0;
 	auto ptr = tape.begin();
-	while (idx < max) {
-
+	while (idx < instructions.size()) {
 		switch (instructions[idx]) {
 			case '+':
 				++(*ptr);
