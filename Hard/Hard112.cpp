@@ -2,11 +2,15 @@
  * Author: Ryan Dougherty
  *
  * Description:
- BrainFuck, is a Turing-complete (i.e. computationally-equivalent to modern programming languages), esoteric programming language. It mimics the concept of a Turing machine[3] , a Turing-complete machine that can read, write, and move an infinite tape of data, through the use of the language's eight (that's right: 8!) operators.
+ BrainFuck, is a Turing-complete (i.e. computationally-equivalent to modern programming languages), esoteric programming
+ language. It mimics the concept of a Turing machine[3] , a Turing-complete machine that can read, write, and move an 
+ infinite tape of data, through the use of the language's eight (that's right: 8!) operators.
+ 
  An example is:
  ++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
  Which prints "Hello World!"
- Your goal is to write a BrainFuck interpreter from scratch, and have it support both single-character output to standard-out and single-character input from standard-in.
+ Your goal is to write a BrainFuck interpreter from scratch, and have it support both single-character output to 
+ standard-out and single-character input from standard-in.
  
  * Formal Inputs & Outputs
  
@@ -23,7 +27,9 @@
  See above
  
  * Notes:
- This is a trivial programming challenge if you understand the basis of a Turing-machine. I strongly urge you to read all related Wikipedia articles to prepare you for this. A more significan't challenge would be to write a BF interpreter through the BF language itself.
+ This is a trivial programming challenge if you understand the basis of a Turing-machine. I strongly urge you to read all 
+ related Wikipedia articles to prepare you for this. A more significan't challenge would be to write a BF interpreter 
+ through the BF language itself.
  
  *
  */
