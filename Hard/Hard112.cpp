@@ -44,7 +44,7 @@ int main(int argc, char* argv[]) {
 		std::cerr << "Invalid num of parameters!";
 		return EXIT_FAILURE;
 	}
-	std::vector<unsigned char> tape(1);
+	std::vector<u_char> tape(1);
 	std::vector<size_t> openBrackets;
 	std::string instructions;
 	inFile >> instructions;
@@ -54,6 +54,15 @@ int main(int argc, char* argv[]) {
 	while (idx < max) {
 
 		switch (instructions[idx]) {
+			case '+':
+				++(*ptr);
+				break;
+			case '-':
+				--(*ptr);
+				break;
+			case '.':
+				std::cout << *ptr;
+				break;
 			case '<':
 				if (ptr == tape.begin()) {
 					std::cerr << "Cannot move left of beginning of tape\n";
@@ -69,16 +78,7 @@ int main(int argc, char* argv[]) {
 					ptr = --tape.end();
 				}
 				break;
-			case '+':
-				++(*ptr);
-				break;
-			case '-':
-				--(*ptr);
-				break;
-			case '.':
-				std::cout << *ptr;
-				break;
-			case ',':
+						case ',':
 				std::cin >> *ptr;
 				break;
 			case '[':
