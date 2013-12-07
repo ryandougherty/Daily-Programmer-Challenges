@@ -92,15 +92,15 @@ int main(int argc, char* argv[]) {
 	});
 	std::cout << numSymbols << " symbols\n";
 
-	std::cout << "Top three most common words: " << map.rbegin()->first;
+	std::cout << "Top three most common words: \"" << map.rbegin()->first;
 	map.erase(std::prev(map.end()));
-	std::cout << ", " << map.rbegin()->first;
+	std::cout << "\", \"" << map.rbegin()->first;
 	map.erase(std::prev(map.end()));
-	std::cout << ", " << map.rbegin()->first << "\n";
+	std::cout << "\", \"" << map.rbegin()->first << "\"\n";
 	
-	std::cout << "Top three most common letters: " << charMap.rbegin()->first;
+	std::cout << "Top three most common letters: \'" << charMap.rbegin()->first;
 	charMap.erase(std::prev(charMap.end()));
-	std::cout << ", " << charMap.rbegin()->first;
+	std::cout << "\', \'" << charMap.rbegin()->first;
 	charMap.erase(std::prev(charMap.end()));
-	std::cout << ", " << charMap.rbegin()->first << "\n";
+	std::cout << "\', \'" << charMap.rbegin()->first << "\'\n";
 }
