@@ -1,7 +1,6 @@
 validScoreNoSafeties :: Int -> String
 validScoreNoSafeties v
 	| v > 5 = "Valid Score"
-	| v < 1 = "Valid Score"
 	| v == 3 = "Valid Score"
 	| otherwise = "Invalid Score"
 
