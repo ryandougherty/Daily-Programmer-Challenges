@@ -53,15 +53,9 @@ int main(int argc, char* argv[]) {
 	auto ptr = tape.begin();
 	while (idx < instructions.size()) {
 		switch (instructions[idx]) {
-			case '+':
-				++(*ptr);
-				break;
-			case '-':
-				--(*ptr);
-				break;
-			case '.':
-				std::cout << *ptr;
-				break;
+			case '+': ++(*ptr); break;
+			case '-': --(*ptr); break;
+			case '.': std::cout << *ptr; break;
 			case '<':
 				if (ptr == tape.begin()) {
 					std::cerr << "Cannot move left of beginning of tape\n";
